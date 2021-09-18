@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <h1 id="header"></h1>
+    <div id="root">Bonjour Abdourahmane BALDE</div>
+    
+    <!-- liens CDN react -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- lien babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- verifier si on a acces à react -->
+    <script type="text/babel">
+    // ========================= Mon premier Component =======================================
+    function Mycomponent(){
+        return <div>Mon composant apparait bien</div>
+    }
+    ReactDOM.render(<Mycomponent />, document.getElementById("root"))
+    // ========================= Header Component =======================================
+    function Header(){
+        return <div>La maison jungle</div>
+    }
+    ReactDOM.render(<Header />, document.getElementById("header"))
+    </script>
+</body>
+</html>
